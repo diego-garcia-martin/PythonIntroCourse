@@ -31,6 +31,10 @@ with open("myfile.txt", "r") as reader:
         print(line, end="")
 
 
+# We will wait for input just to give time to see the generated file
+input("Press enter to delete the file and end the program")
+
+
 #finally we delete the file
 if os.path.exists("myfile.txt"):
     os.remove("myfile.txt")
