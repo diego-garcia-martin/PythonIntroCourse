@@ -1,11 +1,11 @@
 from tkinter import *
 from tkinter import messagebox
-import random
 
 turn = 'X'
 board = [['-', '-', '-'],
         ['-', '-', '-'],
         ['-', '-', '-']]
+
 
 def reset():
     global board, turn
