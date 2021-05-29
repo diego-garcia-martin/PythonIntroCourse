@@ -1,15 +1,8 @@
 import turtle
-# colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
-# t = turtle.Turtle()
-# turtle.bgcolor('black')
-# for x in range(360):
-#     t.color(colors[x%6])
-#     t.width(x/100 + 1)
-#     t.forward(x)
-#     t.left(58)
+import random
 
 turtle.bgcolor("black")
-turtle.screensize(800, 400)
+turtle.screensize(800, 400) # de -400 a 400 en x y de -200 a 200 en y
 
 bob = turtle.Turtle()
 bob.color("red")
@@ -29,8 +22,10 @@ rick.penup()
 rick.goto(-400, -100)
 rick.pendown()
 
-bob.forward(800)
-steve.forward(800)
-rick.forward(800)
+for i in range(400):
+     bob.forward(random.randint(0, 2))
+     steve.forward(random.randint(0, 2))
+     rick.forward(random.randint(0, 2))
+
 
 turtle.done()
